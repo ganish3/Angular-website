@@ -1,0 +1,205 @@
+<div id="mobL">
+  <ul>
+    <li><a [routerLink]="['/teams']">Teams</a></li>
+  </ul>
+</div>
+
+<!-- header section of the page -->
+
+<header>
+  <div class="head_div">
+    <img src="../../assets/img/besant_logo.jfif" alt="Besant" class="logo" />
+    Besant
+  </div>
+  <nav>
+    <ul class="navL">
+      <li><a routerLink="/teams">Teams</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="ic"><i class="fa fa-bars"></i></div>
+
+<!-- Header portion logo -->
+
+<div class="fLogo">
+  <img src="../../assets/img/besant_logo.jfif" alt="Besant" />
+</div>
+<div class="wholeForm">
+  <!-- sign up header -->
+
+  <div class="formHead">
+    <h1>Sign Up for the Newsletter</h1>
+
+    <!-- sign up sentence -->
+
+    <p class="headP">
+      Fill out your information below to be signed up for our informative
+      newsletter
+    </p>
+  </div>
+
+  <!-- signup form  -->
+
+  <div class="formData">
+    <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+      <div class="nameBlock form-group">
+        <!-- first name field -->
+
+        <div class="fnameC">
+          <label for="fname">First name</label><br />
+          <input
+            type="text"
+            id="fname"
+            class="form-control"
+            formControlName="fname"
+            placeholder="Enter your first name here"
+          /><br /><span *ngIf="f.fname.invalid && f.fname.touched"
+            >*Please enter alphabetics only*</span
+          ><br />
+        </div>
+
+        <!-- last name field -->
+
+        <div class="lnameC">
+          <label for="lname">Last name</label><br />
+          <input
+            type="text"
+            class="form-control"
+            id="lname"
+            formControlName="lname"
+            placeholder="Enter your last name here"
+          /><br /><span *ngIf="f.lname.invalid && f.lname.touched"
+            >*Please enter alphabetics only*</span
+          ><br />
+        </div>
+      </div>
+
+      <!-- user name field -->
+
+      <label for="uname">User name</label><br />
+      <input
+        type="text"
+        formControlName="uname"
+        class="form-control"
+        id="uname"
+        placeholder="Enter your username here"
+      /><br /><span *ngIf="f.uname.invalid && f.uname.touched"
+        >*Please enter alphanumeric characters*</span
+      ><br />
+
+      <!-- mail id field -->
+
+      <label for="mail">Email</label><br />
+      <input
+        type="text"
+        formControlName="mail"
+        class="form-control"
+        id="mail"
+        placeholder="Enter your mail id here"
+      /><br /><span *ngIf="f.mail.invalid && f.mail.touched"
+        >*please enter valid email ID with '@' and '.'*</span
+      ><br />
+
+      <!-- phone number field -->
+
+      <label for="phone">Phone number</label><br />
+      <input
+        type="tel"
+        class="form-control"
+        id="phone"
+        formControlName="phone"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        placeholder="Enter valid phone number Ex:123-456-7890"
+      /><br /><span *ngIf="f.phone.invalid && f.phone.touched"
+        >*please enter required phone format*</span
+      ><br /><br />
+
+      <!-- address lane 1 field -->
+
+      <label for="address1">Address field one</label><br />
+      <input
+        type="text"
+        formControlName="address1"
+        class="form-control"
+        id="address1"
+        placeholder="Enter your address here lane 1"
+      /><br /><span *ngIf="f.address1.invalid && f.address1.touched"
+        >*do not enter special characters*</span
+      ><br />
+
+      <!-- address lane 2 field -->
+
+      <label for="address2">Address field two</label><br />
+      <input
+        type="text"
+        formControlName="address2"
+        class="form-control"
+        id="address2"
+        placeholder="Enter your address here lane 2"
+      /><br /><span *ngIf="f.address2.invalid && f.address2.touched"
+        >*do not enter special characters*</span
+      ><br />
+
+      <!-- state field -->
+
+      <label for="state">State</label>
+      <select name="state" id="state" formControlName="state">
+        <option value="california">California</option>
+        <option value="texus">Texus</option>
+        <option value="florida">Florida</option></select
+      ><br /><br />
+
+      <!-- city field -->
+
+      <label for="city">City</label><br />
+      <input
+        type="text"
+        class="form-control"
+        id="city"
+        formControlName="city"
+        placeholder="Enter your city"
+      /><br /><span *ngIf="f.city.invalid && f.city.touched"
+        >Please enter alphabetics only</span
+      ><br />
+
+      <!-- ZIP code field -->
+
+      <label for="zip">ZIP code</label><br />
+      <input
+        type="tel"
+        class="form-control"
+        id="zip"
+        formControlName="zip"
+        pattern="[0-9]{5}"
+        placeholder="Enter valid ZIP code Ex:12345"
+      /><br /><span *ngIf="f.zip.invalid && f.zip.touched"
+        >*please enter 5 digit code*</span
+      ><br />
+      <div>
+        <p>Add me to your mailing list</p>
+      </div>
+      <div>
+        <input type="checkbox" id="cBox" name="cBox" />
+        <label for="cBox"
+          >I agree to receive e-mails from your company and your terms and
+          conditions</label
+        >
+      </div>
+      <br />
+
+      <!-- submit button -->
+
+      <input type="submit" [disabled]="signupForm.invalid" class="subBtn" value="Sign Me Up" />
+    </form>
+  </div>
+</div>
+
+<!-- footer section of the page -->
+
+<footer>
+  <div class="footcls">
+    <img src="../../assets/img/linkedin.jpg" alt="linkedIn" class="footimg" />
+    <img src="../../assets/img/fb.jfif" alt="fb" class="footimg" />
+    <img src="../../assets/img/twitter.png" alt="twitter" class="footimg" />
+  </div>
+</footer>

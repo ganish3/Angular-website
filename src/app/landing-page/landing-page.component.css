@@ -1,0 +1,168 @@
+
+/* css for header section */
+
+.head_div {
+    position: relative;
+    left: 40px;
+    color: bisque;
+  }
+  .banner {
+    height: 455px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100rem;
+    height: 20rem;
+    z-index: -1;
+  }
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* css for navigation section */
+  
+  nav {
+    position: absolute;
+    left: 70rem;
+    top: 1rem;
+  }
+  
+  .btn2 {
+    background-color: burlywood;
+    height: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .navL {
+    list-style: none;
+  }
+  
+  .navL li {
+    display: inline-block;
+    margin: 0px 20px;
+    color: black;
+  }
+  
+  li,
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  li:hover {
+    border-bottom: 1px solid burlywood;
+  }
+  span {
+    position: relative;
+    left: 190px;
+    bottom: 39px;
+  }
+  i.fa.fa-bars {
+    display: none;
+  }
+  
+  /* css for content section */
+  
+  img.imgage {
+    height: 12rem;
+    position: relative;
+    top: 21rem;
+    width: 10rem;
+    padding-left: 16rem;
+  }
+  
+  /* css for footer section */
+  
+  img.footimg {
+    height: 30px;
+    position: relative;
+    top: 27rem;
+    left: 39rem;
+    padding-left: 43px;
+  }
+  #mobL {
+    display: none;
+  }
+  
+  /* css media query for sixe 390px X 844px */
+  
+  @media screen and (width: 390px), (height: 844px) {
+    .banner {
+      height: 50%;
+      width: 100%;
+    }
+    .products {
+      position: absolute;
+      top: 0%;
+      width: 24%;
+    }
+    ul {
+      list-style: none;
+    }
+    img.imgage {
+      padding: 48px;
+      height: 27rem;
+      width: 310%;
+    }
+    img.footimg {
+      height: 60px;
+      width: 62px;
+      left: 4%;
+    }
+    .footcls {
+      position: absolute;
+      width: 100%;
+      top: 180%;
+    }
+    .logo {
+      height: 100%;
+      width: 50px;
+    }
+    .head_div {
+      font-size: 2rem;
+    }
+    .btn2 {
+      background-color: burlywood;
+      height: 51px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 79px;
+    }
+    span {
+      position: relative;
+      left: -731px;
+      top: -4px;
+      bottom: 0px;
+    }
+  
+    .navL {
+      display: none;
+    }
+    i.fa.fa-bars {
+      display: block;
+      color: white;
+      font-size: 2rem;
+    }
+  
+    .ic {
+      display: block;
+      position: absolute;
+      left: 318px;
+      top: 19px;
+    }
+    #mobL {
+      display: none;
+      background-color: brown;
+      position: absolute;
+      font-size: 1rem;
+      z-index: 1;
+      width: 225px;
+      text-align: center;
+      list-style: none;
+    }
+    #mobL a:hover {
+      border-bottom: 2px solid black;
+    }
+  }
+  

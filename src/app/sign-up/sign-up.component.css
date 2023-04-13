@@ -1,0 +1,195 @@
+
+
+input.ng-invalid{
+  border: 1px solid red;
+}
+
+
+.wholeForm {
+    text-align: center;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    border: 1px solid burlywood;
+    border-radius: 2%;
+    padding: 3%;
+    background-color: antiquewhite;
+  }
+  
+  .formHead {
+    background-color: burlywood;
+    border-radius: 10px;
+  }
+  
+  .formData {
+    text-align: start;
+    font-size: 135%;
+  }
+  
+  input {
+    height: 55px;
+    width: 95%;
+    border-radius: 10px;
+  }
+  
+  .nameBlock {
+    display: flex;
+  }
+  
+  .fnameC {
+    width: 50%;
+  }
+  
+  .lnameC {
+    width: 50%;
+  }
+  
+  input#fname {
+    width: 90%;
+  }
+  
+  input#lname {
+    width: 90%;
+  }
+  
+  img {
+    height: 85px;
+  }
+  
+  .fLogo {
+    text-align: center;
+    padding-bottom: 1%;
+  }
+  .headP {
+    font-size: larger;
+  }
+  .subBtn {
+    background-color: burlywood;
+    font-size: x-large;
+    width: 96%;
+    cursor: pointer;
+  }
+  span {
+    color: red;
+  }
+  
+  input#cBox {
+    height: 15px;
+    width: unset;
+  }
+  nav {
+    position: absolute;
+    left: 80rem;
+    top: 1rem;
+  }
+  .btn1 {
+    background-color: burlywood;
+    height: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 80px;
+  }
+  
+  img.footimg {
+    height: 30px;
+    position: relative;
+    top: 2rem;
+    left: 39rem;
+    padding-left: 43px;
+  }
+  
+  img.logo {
+    height: 40px;
+    width: 40px;
+  }
+  
+  .head_div {
+    position: relative;
+    left: 40px;
+    color: black;
+  }
+  
+  .navL {
+    list-style: none;
+  }
+  
+  .navL li {
+    display: inline-block;
+    margin: 0px 20px;
+    color: black;
+  }
+  
+  li,
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  li:hover {
+    border-bottom: 1px solid burlywood;
+  }
+  #mobL,
+  .ic {
+    display: none;
+  }
+  
+  /* media query for size 390px width and 844px height */
+  
+  @media screen and (width: 390px), (height: 844px) {
+    
+  
+    .wholeForm {
+      text-align: center;
+      width: 90%;
+      position: relative;
+      left: 0px;
+      font-size: 8px;
+      border: 1px solid burlywood;
+      border-radius: 2%;
+      padding: 3%;
+      background-color: antiquewhite;
+    }
+    nav {
+      display: none;
+    }
+    .fLogo {
+      display: none;
+    }
+    img.footimg {
+      height: 27px;
+      position: relative;
+      top: 1rem;
+      left: 3rem;
+      padding-left: 43px;
+    }
+    .head_div {
+      left: 4px;
+    }
+    .ic {
+      display: block;
+      position: absolute;
+      left: 330px;
+      top: 17px;
+      font-size: x-large;
+    }
+  
+    .navL {
+      list-style: none;
+    }
+  
+    #mobL a:hover {
+      border-bottom: 2px solid black;
+    }
+    ul {
+      list-style: none;
+    }
+    #mobL {
+      display: none;
+      position: absolute;
+      font-size: 1rem;
+      left: 215px;
+      z-index: 1;
+      width: 221px;
+      list-style: none;
+    }
+  }
+  

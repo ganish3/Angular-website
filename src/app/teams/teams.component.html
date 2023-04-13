@@ -1,0 +1,38 @@
+<header>
+  <div class="head_div">
+    <img src="../../assets/img/besant_logo.jfif" alt="Besant" class="logo" />
+    Besant
+  </div>
+  <nav>
+    <span><button class="btn2" routerLink="/signUp">Sign up/Login</button></span>
+  </nav>
+</header>
+
+<!-- page content  -->
+
+<section>
+  <div id="cards">
+    <div id="card" *ngFor="let user of users">
+      <div class="imageC">
+        <img src="{{ user.image }}" alt="profile" class="profImg" />
+        <h6 class="name">{{ user.firstName }} {{ user.lastName }}</h6>
+      </div>
+      <div class="context">
+        <span><i class="fa-solid fa-location-dot"></i></span>
+        <p>{{ user.address.city }},</p>
+        <p>{{ user.address.state }}</p>
+        <button>View Profile</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- footer sectionof the page -->
+
+<footer>
+  <div class="footcls">
+    <img src="../../assets/img/linkedin.jpg" alt="linkedIn" class="footimg" />
+    <img src="../../assets/img/fb.jfif" alt="fb" class="footimg" />
+    <img src="../../assets/img/twitter.png" alt="twitter" class="footimg" />
+  </div>
+</footer>

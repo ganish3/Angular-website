@@ -1,0 +1,147 @@
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat";
+  background-color: bisque;
+}
+
+
+#card {
+  text-align: center;
+  border: 1px solid black;
+  width: 184px;
+  height: 250px;
+  background-color: blanchedalmond;
+  border-radius: 40px;
+  box-shadow: 5px 10px #888888;
+  margin: 2%;
+}
+#cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.context {
+  width: 100%;
+  height: 250px;  
+  position: relative;
+  top: 100px;
+}
+
+img.profImg {
+  width: 50%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: brown;
+}
+
+p {
+  text-align: center;
+  font-size: 100%;
+}
+
+button {
+ 
+    background-color: burlywood;
+    height: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+  
+}
+
+.imageC {
+  position: relative;
+  top: 1%;
+  height: 20px;
+}
+
+.name {
+  font-size: 18px;
+  position: relative;
+  bottom: 35px;
+}
+
+nav {
+  position: absolute;
+  left: 81rem;
+  top: 2rem;
+  width: 206px;
+}
+.btn1 {
+  background-color: burlywood;
+  height: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 80px;
+}
+
+img.footimg {
+  height: 30px;
+  position: relative;
+  top: 2rem;
+  left: 39rem;
+  padding-left: 43px;
+}
+
+img.logo {
+  height: 40px;
+  width: 40px;
+}
+
+.head_div {
+  position: relative;
+  left: 40px;
+  color: black;
+}
+
+/* media query for size 390px width and 844px height */
+
+@media screen and (width: 390px), (height: 844px) {
+  .head_div {
+    position: relative;
+    left: 0;
+    font-size: xx-small;
+    color: black;
+}
+img.logo {
+  height: 20px;
+  width: 20px;
+}
+  nav {
+    position: absolute;
+    left: 15rem;
+    top: 0rem;
+    width: 206px;
+  }
+  img.footimg {
+    height: 44px;
+    position: relative;
+    top: 3rem;
+    left: 2rem;
+    padding-left: 44px;
+  }
+  #card {
+    width: 170px;
+  }
+  .ic {
+    display: block;
+    position: absolute;
+    left: 361px;
+    top: 11px;
+    font-size: xx-large;
+  }
+  #mobL {
+    display: none;
+    background-color: brown;
+    width: 21rem;
+    text-align: center;
+  }
+  #mobL a:hover {
+    border-bottom: 2px solid black;
+  }
+  li {
+    list-style: none;
+  }
+}
